@@ -4,6 +4,7 @@ body {
     width: 100px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    background-color: yellow;
 }
 
 a:link {
