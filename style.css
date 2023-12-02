@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    /* background-color: aqua; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,40 +17,38 @@ main {
     position: fixed;
     display: flex;
     flex-direction: row;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 #display {
     height: 100vh;
     width: 70vw;
-    background-color: rgb(194, 194, 255);
+    /* background-color: rgb(194, 194, 255); */
     border-right: 1px solid black;
 }
 
 #nav {
     height: 100vh;
     width: 30vw;
-    background-color: green;
+    /* background-color: green; */
 }
 
 #nav > div {
-    border-bottom: 1px solid red;
-    background-color: deepskyblue;
+    border-bottom: 1px solid black;
+    /* background-color: deepskyblue; */
 }
 
-#counter{
+#initial-bin {
     display: inline-flex;
-    justify-content: flex-end;
     width: 100%;
-    background-color: limegreen;
+    justify-content: space-between;
 }
 
-#arrow {
+#personal-bins {
     display: inline-flex;
-    justify-content: flex-end;
     width: 100%;
-    background-color: limegreen;
-}
+    justify-content: space-between;
+} 
 
 #toolbar {
     display: inline-flex;
@@ -67,13 +65,16 @@ main {
 
 /* highlight styling */
 .info {
-    padding-left: 10px;
     display: inline-flex;
     column-gap: 10px;
-    background-color: gold;
+    /* background-color: gold; */
     align-items: stretch;
     width: 100%;
     justify-content: flex-start;
+}
+
+.info > h4 {
+    text-wrap: nowrap;
 }
 
 .highlight {
@@ -82,10 +83,15 @@ main {
 
 .archive-countdown {
     display: inline-flex;
-    width: 70%;
+    width: 100%;
     justify-content: flex-end;
-    font-weight: normal;
-    background-color: lime;
+    font-weight: lighter;
+    /* background-color: lime; */
+}
+
+.archive-countdown > img {
+    padding-top: 18px;
+    padding-right: 10px;
 }
 
 .delete-countdown {
@@ -94,4 +100,27 @@ main {
     justify-content: flex-end;
     font-weight: normal;
     background-color: lime;
+}
+
+#instructions{
+    width: 30vw;
+    height: 80vh;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    overflow-y: auto;
+    font-size: smaller;
+    border-top: 1px solid black;
+    user-select: none; 
+}
+
+#instructions > h4 {
+    color: cornflowerblue;
+}
+
+#instructions > h5 {
+    font-weight: normal;
+    text-align: right;
+    padding: 5px;
+    margin-top: -1%;
 }
