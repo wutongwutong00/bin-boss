@@ -4,5 +4,9 @@ body {
     width: 100px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+a:link {
     text-decoration: none;
+    color: black;
 }
