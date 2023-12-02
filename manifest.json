@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Reading time",
+  "name": "Bin Boss",
   "version": "1.0",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "description": "Organize your highlights into bins for better experience in taking notes or whatever",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",

@@ -1,16 +1,8 @@
 body {
-    padding: 1em;
-    width: 300px;
+    font-size: 20px;
+    padding: 0.5em;
+    width: 100px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-}
-
-h1 {
-    font-size: 24pt;
-    background-color: yellow;
-}
-
-p {
-    color: blue;
-    font-size: 16pt;
+    text-decoration: none;
 }
