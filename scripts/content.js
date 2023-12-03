@@ -1,15 +1,9 @@
-function highlightSelection () {
+function highlightSelection() {
     var userSelect = window.getSelection();
     console.log(userSelect);
-    if (userSelect.type === String){
-        console.log(userSelect.focusNode.textContent);
+    if (userSelect.type === "Range") {
+        console.log(userSelect.toString());
     }
 }
 
-window.addEventListener('select', highlightSelection());
-
-
-// chrome.storage.local.get(['clickedTimes']).then((result) => {
-//     let clickedCount = result.clickedTimes || 0; 
-//     badge.innerText = `Click me. Clicked ${clickedCount}`;
-// });
+window.addEventListener('mouseup', highlightSelection);
