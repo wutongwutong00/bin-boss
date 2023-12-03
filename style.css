@@ -55,7 +55,7 @@ main {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: pink;
+    /* background-color: pink; */
     padding: 5px;
 }
 
