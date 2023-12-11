@@ -11,6 +11,28 @@ img {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     width: 60px;
+
+}
+
+img:hover {
+    animation: shake 2ms infinite linear;
+    background-color: yellow;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(10px, 0px);
+    }
+    100% {
+        transform: translate(0px);
+    }
 }
 
 @keyframes bin {
