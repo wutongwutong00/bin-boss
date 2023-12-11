@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <div id="display">
-        <div id="highlight-1" class="highlight">
-          <h1 id="content" class="content">hi this is content</h1>
-          <h2 id="notes" class="notes"></h2>
-          <span id="info" class="info">
-            <h4 id="title" class="title"><span>jstor</span> |</h4>
-            <h4 id="time" class="time"><span>2 December 2023 11:34</span> |</h4>
-            <h4 id="author" class="author">themis k</h4>
-            <div id="archive-countdown" class="archive-countdown">
-              <img src="images/archive.png" height="24px">
-              <h4 id="days" class="days"> 14 days</h4>
-            </div>
-          </span>
-        </div>
-
+      
+      <div id="display" class="display">
+      </div>
+      <div id="display2" class="display2">
+      </div>
+​
       </div>
       <div id="nav">
         <div id="initial-bin">Initial Bin <span id="counter">(0)</span></div>
         <div id="personal-bins">Personal Bins <span id="arrow">▶</span></div>
-        <div id="archive"></div>
+        <div id="pb-highlight"></div>
+        <div id="archive">Archive</div>
         
         <div id="toolbar">
           <div id="add">+</div>
@@ -37,9 +29,9 @@
         
       </div>
     </main>
-
+​
     <div id="instructions">
-      <h5>X</h5>
+      <h5 id="crossHelp">X</h5>
       <h4>Reaching Home Base</h4>
       <p>1. Access Home Base after saving your highlights</p>
       <p>2. Access through Chrome Extension menu</p><br>
@@ -65,6 +57,6 @@
       <p>2. Press tab to open up bin menu and select bin </p>
       <p>3. Press return to move the highlight </p>
     </div>
-<script src="script.js" type="module"></script>
+<script src="popup.js" type="module"></script>
   </body>
 </html>

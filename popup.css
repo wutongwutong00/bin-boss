@@ -4,19 +4,29 @@ body {
     width: 100px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: yellow;
 }
 
-a:link {
+img {
+    animation-name: bin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 60px;
+}
+
+@keyframes bin {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(0px, 20px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+a:link, a:visited {
     text-decoration: none;
     color: black;
-}
-
-/* 
-.highlighted {
-    color: yellow;
-} */
-
-.highlighted {
-    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
 }

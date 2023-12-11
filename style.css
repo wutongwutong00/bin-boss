@@ -20,43 +20,101 @@ main {
     /* background-color: blueviolet; */
 }
 
+#savedHighlight {
+
+}
+
 #display {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     height: 100vh;
     width: 70vw;
-    /* background-color: rgb(194, 194, 255); */
     border-right: 1px solid black;
+}
+
+#display > div {
+    border-bottom: 1px solid black;
+    padding: 0.5vw 1vw;
+}
+
+#display2 {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 70vw;
+    border-right: 1px solid black;
+}
+
+#display2 > div {
+    border-bottom: 1px solid black;
+    /* background-color: red; */
+    padding: 0.5vw 1vw;
 }
 
 #nav {
     height: 100vh;
     width: 30vw;
-    /* background-color: green; */
-}
-
-#nav > div {
-    border-bottom: 1px solid black;
-    /* background-color: deepskyblue; */
 }
 
 #initial-bin {
     display: inline-flex;
     width: 100%;
-    justify-content: space-between;
+    font-size: 14px;
+    padding: 0.5vw;
+    border-bottom: 1px solid black;
+    background-color: yellow;
 }
 
-#personal-bins {
+#initial-bin > span {
+    position: absolute;
+    right: 0.5vw;
+}
+
+#personal-bins, #archive {
     display: inline-flex;
     width: 100%;
-    justify-content: space-between;
+    padding: 0.5vw;
+    font-size: 14px;
+    border-bottom: 1px solid black;
 } 
+
+#personal-bins > span {
+    position: absolute;
+    right: 0.5vw;
+}
+
+.naming {
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+#pb-highlight > div {
+    display: inline-flex;
+    width: 100%;
+    padding: 0.5vw;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+.personal-bins {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5vw;
+    font-size: 8px;
+    border-bottom: 1px solid black;
+}
 
 #toolbar {
     display: inline-flex;
     position: fixed;
     bottom: 0;
     right: 0;
-    /* background-color: pink; */
+    background-color: white;
     padding: 5px;
+    z-index: 3;
 }
 
 #toolbar > div {
@@ -102,25 +160,38 @@ main {
     background-color: lime;
 }
 
-#instructions{
+#instructions {
     width: 30vw;
     height: 80vh;
     right: 0;
     bottom: 0;
     position: absolute;
     overflow-y: auto;
-    font-size: smaller;
+    font-size: 14px;
     border-top: 1px solid black;
     user-select: none; 
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 100;
+    background-color: white;
 }
 
 #instructions > h4 {
-    color: cornflowerblue;
+    color: black;
+    width: 80%;
+    padding-left: 1vw;
 }
 
 #instructions > h5 {
     font-weight: normal;
     text-align: right;
-    padding: 5px;
-    margin-top: -1%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#instructions > h5:hover {
+    font-weight: bold;
+}
+
+#instructions > p {
+    width: 80%;
+    padding-left: 1vw;
 }
